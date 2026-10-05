@@ -10,6 +10,9 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Writable writer = new Writer("adat.txt");
+        writer.writeContent("alma");
+        writer.writeContent("körte");
+        System.out.println("A fájlba írás kész.");
     }
 }
